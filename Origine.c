@@ -8,10 +8,9 @@
   attesi.
 
   Il file sorgente deve essere consegnato allegandolo a questa
-  attivit‡.
+  attivit√†.
 */
 
-/*LEONE ALESSIO*/
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
@@ -42,12 +41,12 @@ int AcquisisciVettore(int* v, int n)
   La funzione Espandi dato un vettore 'v', la sua dimensione
   'dimensione_in' ed un numero intero positivo 'n', alloca e
   restituisce un vettore contenente gli elementi di 'v' ognuno dei
-  quali ripetuto 'n' volte. Restituisce altresÏ in 'dimensione_out' la
+  quali ripetuto 'n' volte. Restituisce altres√¨ in 'dimensione_out' la
   dimensione di tale vettore.
  */
 int* Espandi(int* v, int dimensione_in, int n, int* dimensione_out)
 {
-    int* v_esp = (int*)malloc(sizeof(int) * n*dimensione_in); //Ë v ripetuto n volte.
+    int* v_esp = (int*)malloc(sizeof(int) * n*dimensione_in); //√® v ripetuto n volte.
     int k = 0;
     
     for (int j = 0; j < n; j++) {
@@ -102,7 +101,7 @@ int main(void)
        Invocare la funzione AcquisisciVettore per acquisire i valori di vettore
     */
     dimensione=AcquisisciVettore(vettore,dimensione);
-    //dimensione dopo l'assegnazione puÚ essere <=dimensione passata come parametro della chiamata
+    //dimensione dopo l'assegnazione pu√≤ essere <=dimensione passata come parametro della chiamata
 
     /*
       Acquisire un numero strettamente maggiore di zero e memorizzarlo
@@ -115,7 +114,7 @@ int main(void)
 
 
      /*
-       Invocare la funzione Espandi in cui il parametro formale 'n' Ë rappresentato dalla variabile 'espansione'
+       Invocare la funzione Espandi in cui il parametro formale 'n' √® rappresentato dalla variabile 'espansione'
      */
      vettore_espanso = Espandi(vettore,dimensione,espansione,&dimensione_espanso);
 
